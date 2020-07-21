@@ -1,0 +1,124 @@
+I, [2020-07-21T14:05:57.052499 #16000]  INFO -- : Registered expected interaction GET /api/users/1
+D, [2020-07-21T14:05:57.053496 #16000] DEBUG -- : {
+  "description": "a request to GET a user",
+  "providerState": "user 1 exists",
+  "request": {
+    "method": "GET",
+    "path": "/api/users/1"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "json_class": "Pact::SomethingLike",
+      "contents": {
+        "email": "tay.ta@axonactive.com",
+        "firstName": "Tay",
+        "lastName": "Ta"
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2020-07-21T14:05:57.127486 #16000]  INFO -- : Received request GET /api/users/1
+D, [2020-07-21T14:05:57.127486 #16000] DEBUG -- : {
+  "path": "/api/users/1",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Referer": "http://localhost:1234/",
+    "User-Agent": "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.3.0",
+    "Accept-Language": "en",
+    "Host": "localhost:1234",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2020-07-21T14:05:57.128455 #16000]  INFO -- : Found matching response for GET /api/users/1
+D, [2020-07-21T14:05:57.128455 #16000] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": {
+    "json_class": "Pact::SomethingLike",
+    "contents": {
+      "email": "tay.ta@axonactive.com",
+      "firstName": "Tay",
+      "lastName": "Ta"
+    }
+  }
+}
+I, [2020-07-21T14:05:57.149399 #16000]  INFO -- : Verifying - interactions matched
+I, [2020-07-21T14:05:57.161397 #16000]  INFO -- : Cleared interactions
+I, [2020-07-21T14:05:57.171340 #16000]  INFO -- : Registered expected interaction POST /api/users
+D, [2020-07-21T14:05:57.171340 #16000] DEBUG -- : {
+  "description": "a request to POST a user",
+  "providerState": "provider accepts a new user",
+  "request": {
+    "method": "POST",
+    "path": "/api/users",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "email": "tay.ta@axonactive.com",
+      "firstName": "Tay",
+      "lastName": "Ta"
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "json_class": "Pact::SomethingLike",
+      "contents": {
+        "id": 2
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2020-07-21T14:05:57.195306 #16000]  INFO -- : Received request POST /api/users
+D, [2020-07-21T14:05:57.196296 #16000] DEBUG -- : {
+  "path": "/api/users",
+  "query": "",
+  "method": "post",
+  "body": {
+    "email": "tay.ta@axonactive.com",
+    "firstName": "Tay",
+    "lastName": "Ta"
+  },
+  "headers": {
+    "Content-Length": "67",
+    "Content-Type": "application/json",
+    "Accept": "application/json, text/plain, */*",
+    "Referer": "http://localhost:1234/",
+    "User-Agent": "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.3.0",
+    "Accept-Language": "en",
+    "Host": "localhost:1234",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2020-07-21T14:05:57.196296 #16000]  INFO -- : Found matching response for POST /api/users
+D, [2020-07-21T14:05:57.196296 #16000] DEBUG -- : {
+  "status": 201,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "json_class": "Pact::SomethingLike",
+    "contents": {
+      "id": 2
+    }
+  }
+}
+I, [2020-07-21T14:05:57.204282 #16000]  INFO -- : Verifying - interactions matched
+I, [2020-07-21T14:05:57.215252 #16000]  INFO -- : Cleared interactions
+I, [2020-07-21T14:05:57.226223 #16000]  INFO -- : Writing pact for userservice to C:/DATA/pacts/ui-jest-userservice.json
