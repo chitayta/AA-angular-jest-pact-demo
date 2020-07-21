@@ -1,5 +1,5 @@
-I, [2020-07-21T14:05:57.052499 #16000]  INFO -- : Registered expected interaction GET /api/users/1
-D, [2020-07-21T14:05:57.053496 #16000] DEBUG -- : {
+I, [2020-07-21T16:22:21.712557 #16252]  INFO -- : Registered expected interaction GET /api/users/1
+D, [2020-07-21T16:22:21.712557 #16252] DEBUG -- : {
   "description": "a request to GET a user",
   "providerState": "user 1 exists",
   "request": {
@@ -21,8 +21,8 @@ D, [2020-07-21T14:05:57.053496 #16000] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2020-07-21T14:05:57.127486 #16000]  INFO -- : Received request GET /api/users/1
-D, [2020-07-21T14:05:57.127486 #16000] DEBUG -- : {
+I, [2020-07-21T16:22:21.799295 #16252]  INFO -- : Received request GET /api/users/1
+D, [2020-07-21T16:22:21.799295 #16252] DEBUG -- : {
   "path": "/api/users/1",
   "query": "",
   "method": "get",
@@ -37,8 +37,8 @@ D, [2020-07-21T14:05:57.127486 #16000] DEBUG -- : {
     "Version": "HTTP/1.1"
   }
 }
-I, [2020-07-21T14:05:57.128455 #16000]  INFO -- : Found matching response for GET /api/users/1
-D, [2020-07-21T14:05:57.128455 #16000] DEBUG -- : {
+I, [2020-07-21T16:22:21.799295 #16252]  INFO -- : Found matching response for GET /api/users/1
+D, [2020-07-21T16:22:21.800292 #16252] DEBUG -- : {
   "status": 200,
   "headers": {
   },
@@ -51,10 +51,10 @@ D, [2020-07-21T14:05:57.128455 #16000] DEBUG -- : {
     }
   }
 }
-I, [2020-07-21T14:05:57.149399 #16000]  INFO -- : Verifying - interactions matched
-I, [2020-07-21T14:05:57.161397 #16000]  INFO -- : Cleared interactions
-I, [2020-07-21T14:05:57.171340 #16000]  INFO -- : Registered expected interaction POST /api/users
-D, [2020-07-21T14:05:57.171340 #16000] DEBUG -- : {
+I, [2020-07-21T16:22:21.835422 #16252]  INFO -- : Verifying - interactions matched
+I, [2020-07-21T16:22:21.846392 #16252]  INFO -- : Cleared interactions
+I, [2020-07-21T16:22:21.863347 #16252]  INFO -- : Registered expected interaction POST /api/users
+D, [2020-07-21T16:22:21.863347 #16252] DEBUG -- : {
   "description": "a request to POST a user",
   "providerState": "provider accepts a new user",
   "request": {
@@ -83,8 +83,8 @@ D, [2020-07-21T14:05:57.171340 #16000] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2020-07-21T14:05:57.195306 #16000]  INFO -- : Received request POST /api/users
-D, [2020-07-21T14:05:57.196296 #16000] DEBUG -- : {
+I, [2020-07-21T16:22:21.916365 #16252]  INFO -- : Received request POST /api/users
+D, [2020-07-21T16:22:21.916365 #16252] DEBUG -- : {
   "path": "/api/users",
   "query": "",
   "method": "post",
@@ -106,8 +106,8 @@ D, [2020-07-21T14:05:57.196296 #16000] DEBUG -- : {
     "Version": "HTTP/1.1"
   }
 }
-I, [2020-07-21T14:05:57.196296 #16000]  INFO -- : Found matching response for POST /api/users
-D, [2020-07-21T14:05:57.196296 #16000] DEBUG -- : {
+I, [2020-07-21T16:22:21.916365 #16252]  INFO -- : Found matching response for POST /api/users
+D, [2020-07-21T16:22:21.917362 #16252] DEBUG -- : {
   "status": 201,
   "headers": {
     "Content-Type": "application/json"
@@ -119,6 +119,6 @@ D, [2020-07-21T14:05:57.196296 #16000] DEBUG -- : {
     }
   }
 }
-I, [2020-07-21T14:05:57.204282 #16000]  INFO -- : Verifying - interactions matched
-I, [2020-07-21T14:05:57.215252 #16000]  INFO -- : Cleared interactions
-I, [2020-07-21T14:05:57.226223 #16000]  INFO -- : Writing pact for userservice to C:/DATA/pacts/ui-jest-userservice.json
+I, [2020-07-21T16:22:21.937353 #16252]  INFO -- : Verifying - interactions matched
+I, [2020-07-21T16:22:21.947325 #16252]  INFO -- : Cleared interactions
+I, [2020-07-21T16:22:21.960292 #16252]  INFO -- : Writing pact for userservice to C:/DATA/pacts/ui-jest-userservice.json
